@@ -1,201 +1,204 @@
 /* 基礎設定 */
 :root {
-    --bg-color: #0f172a;       /* 深藍背景 */
-    --card-bg: #1e293b;        /* 區塊背景 */
-    --text-main: #f8fafc;      /* 主文字色 */
-    --text-muted: #94a3b8;     /* 次要文字色 */
-    --accent: #38bdf8;         /* 科技藍高亮 */
-    --accent-hover: #0ea5e9;
-    --transition: all 0.3s ease;
+    --bg-color: #1a1a24;       /* 深沉的夜色（忍者主題） */
+    --card-bg: #252533;        /* 區塊背景[cite: 3] */
+    --text-main: #f8fafc;      /* 白髮意象的主文字色[cite: 3] */
+    --text-muted: #94a3b8;     /* 次要文字色[cite: 3] */
+    --accent: #6EB487;         /* 叢雲花月的經典綠色 */
+    --accent-hover: #5a9970;   
+    --accent-secondary: #8A2BE2; /* 紫色眼眸點綴 */
+    --transition: all 0.3s ease; /*[cite: 3] */
 }
 
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; /*[cite: 3] */
 }
 
 html {
-    scroll-behavior: smooth; /* 平滑捲動 */
+    scroll-behavior: smooth; /*[cite: 3] */
 }
 
 body {
-    font-family: 'Inter', -apple-system, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-main);
-    line-height: 1.6;
+    font-family: 'Inter', -apple-system, sans-serif; /*[cite: 3] */
+    background-color: var(--bg-color); /*[cite: 3] */
+    color: var(--text-main); /*[cite: 3] */
+    line-height: 1.6; /*[cite: 3] */
 }
 
 .container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 2rem;
+    max-width: 1000px; /*[cite: 3] */
+    margin: 0 auto; /*[cite: 3] */
+    padding: 0 2rem; /*[cite: 3] */
 }
 
 /* 導覽列 */
 .navbar {
-    padding: 1.5rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    background: rgba(15, 23, 42, 0.8);
-    backdrop-filter: blur(10px);
-    z-index: 1000;
+    padding: 1.5rem 0; /*[cite: 3] */
+    position: fixed; /*[cite: 3] */
+    width: 100%; /*[cite: 3] */
+    top: 0; /*[cite: 3] */
+    background: rgba(26, 26, 36, 0.8); 
+    backdrop-filter: blur(10px); /*[cite: 3] */
+    z-index: 1000; /*[cite: 3] */
 }
 
 .navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /*[cite: 3] */
+    justify-content: space-between; /*[cite: 3] */
+    align-items: center; /*[cite: 3] */
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 800;
-    text-decoration: none;
-    color: var(--text-main);
+    font-size: 1.5rem; /*[cite: 3] */
+    font-weight: 800; /*[cite: 3] */
+    text-decoration: none; /*[cite: 3] */
+    color: var(--text-main); /*[cite: 3] */
 }
 
-.logo span { color: var(--accent); }
+.logo span { color: var(--accent); } /*[cite: 3] */
 
 .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
+    display: flex; /*[cite: 3] */
+    list-style: none; /*[cite: 3] */
+    gap: 2rem; /*[cite: 3] */
 }
 
 .nav-links a {
-    text-decoration: none;
-    color: var(--text-muted);
-    font-weight: 600;
-    transition: var(--transition);
+    text-decoration: none; /*[cite: 3] */
+    color: var(--text-muted); /*[cite: 3] */
+    font-weight: 600; /*[cite: 3] */
+    transition: var(--transition); /*[cite: 3] */
 }
 
-.nav-links a:hover { color: var(--accent); }
+.nav-links a:hover { color: var(--accent); } /*[cite: 3] */
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    padding-top: 80px;
+    height: 100vh; /*[cite: 3] */
+    display: flex; /*[cite: 3] */
+    align-items: center; /*[cite: 3] */
+    padding-top: 80px; /*[cite: 3] */
 }
 
 .hero-name {
-    font-size: clamp(2.5rem, 8vw, 4rem);
-    font-weight: 800;
-    margin-bottom: 1.5rem;
-    line-height: 1.1;
+    font-size: clamp(2.5rem, 8vw, 4rem); /*[cite: 3] */
+    font-weight: 800; /*[cite: 3] */
+    margin-bottom: 1.5rem; /*[cite: 3] */
+    line-height: 1.1; /*[cite: 3] */
 }
 
 .en-name {
-    display: block;
-    font-size: 1.5rem;
-    color: var(--accent);
-    opacity: 0.8;
+    display: block; /*[cite: 3] */
+    font-size: 1.5rem; /*[cite: 3] */
+    color: var(--accent); /*[cite: 3] */
+    opacity: 0.8; /*[cite: 3] */
 }
 
 .hero-tagline {
-    font-size: 1.25rem;
-    color: var(--text-muted);
-    max-width: 600px;
-    margin-bottom: 2.5rem;
+    font-size: 1.25rem; /*[cite: 3] */
+    color: var(--text-muted); /*[cite: 3] */
+    max-width: 600px; /*[cite: 3] */
+    margin-bottom: 2.5rem; /*[cite: 3] */
 }
 
 /* 按鈕樣式 */
 .hero-btns {
-    display: flex;
-    gap: 1rem;
+    display: flex; /*[cite: 3] */
+    gap: 1rem; /*[cite: 3] */
 }
 
 .btn {
-    padding: 0.8rem 2rem;
-    border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: var(--transition);
+    padding: 0.8rem 2rem; /*[cite: 3] */
+    border-radius: 8px; /*[cite: 3] */
+    text-decoration: none; /*[cite: 3] */
+    font-weight: 600; /*[cite: 3] */
+    transition: var(--transition); /*[cite: 3] */
 }
 
 .btn-primary {
-    background-color: var(--accent);
-    color: var(--bg-color);
+    background-color: var(--accent); /*[cite: 3] */
+    color: var(--bg-color); /*[cite: 3] */
 }
 
-.btn-primary:hover { background-color: var(--accent-hover); }
+.btn-primary:hover { background-color: var(--accent-hover); } /*[cite: 3] */
 
 .btn-outline {
-    border: 2px solid var(--accent);
-    color: var(--accent);
+    border: 2px solid var(--accent); /*[cite: 3] */
+    color: var(--accent); /*[cite: 3] */
 }
 
 .btn-outline:hover {
-    background: rgba(56, 189, 248, 0.1);
+    background: rgba(110, 180, 135, 0.1); 
 }
 
 /* 通用 Section 樣式 */
 .section-title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    position: relative;
-    display: inline-block;
+    font-size: 2rem; /*[cite: 3] */
+    margin-bottom: 2rem; /*[cite: 3] */
+    position: relative; /*[cite: 3] */
+    display: inline-block; /*[cite: 3] */
 }
 
 .section-title::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    width: 40px;
-    height: 4px;
-    background: var(--accent);
+    content: ''; /*[cite: 3] */
+    position: absolute; /*[cite: 3] */
+    bottom: -10px; /*[cite: 3] */
+    left: 0; /*[cite: 3] */
+    width: 40px; /*[cite: 3] */
+    height: 4px; /*[cite: 3] */
+    background: var(--accent); /*[cite: 3] */
 }
 
 .about, .contact {
-    padding: 100px 0;
+    padding: 100px 0; /*[cite: 3] */
 }
 
 .about-content {
-    background: var(--card-bg);
-    padding: 2rem;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.05);
+    background: var(--card-bg); /*[cite: 3] */
+    padding: 2rem; /*[cite: 3] */
+    border-radius: 12px; /*[cite: 3] */
+    border: 1px solid rgba(110, 180, 135, 0.2); 
+    box-shadow: inset 0 0 10px rgba(138, 43, 226, 0.05); /* 加入微弱紫色眼眸意象的內陰影 */
 }
 
 /* Contact */
-.contact { text-align: center; }
-.contact-desc { color: var(--text-muted); margin-bottom: 2rem; }
+.contact { text-align: center; } /*[cite: 3] */
+.contact-desc { color: var(--text-muted); margin-bottom: 2rem; } /*[cite: 3] */
 .contact-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    flex-wrap: wrap;
+    display: flex; /*[cite: 3] */
+    justify-content: center; /*[cite: 3] */
+    gap: 1.5rem; /*[cite: 3] */
+    flex-wrap: wrap; /*[cite: 3] */
 }
 
 .contact-item {
-    padding: 1rem 2rem;
-    background: var(--card-bg);
-    color: var(--accent);
-    text-decoration: none;
-    border-radius: 50px;
-    border: 1px solid transparent;
-    transition: var(--transition);
+    padding: 1rem 2rem; /*[cite: 3] */
+    background: var(--card-bg); /*[cite: 3] */
+    color: var(--accent); /*[cite: 3] */
+    text-decoration: none; /*[cite: 3] */
+    border-radius: 50px; /*[cite: 3] */
+    border: 1px solid transparent; /*[cite: 3] */
+    transition: var(--transition); /*[cite: 3] */
 }
 
 .contact-item:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
+    border-color: var(--accent); /*[cite: 3] */
+    transform: translateY(-3px); /*[cite: 3] */
+    box-shadow: 0 4px 15px rgba(110, 180, 135, 0.3);
 }
 
 .footer {
-    padding: 3rem 0;
-    text-align: center;
-    color: var(--text-muted);
-    font-size: 0.9rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    padding: 3rem 0; /*[cite: 3] */
+    text-align: center; /*[cite: 3] */
+    color: var(--text-muted); /*[cite: 3] */
+    font-size: 0.9rem; /*[cite: 3] */
+    border-top: 1px solid rgba(255, 255, 255, 0.05); /*[cite: 3] */
 }
 
 /* 手機版適配 */
 @media (max-width: 768px) {
-    .hero-btns { flex-direction: column; }
-    .nav-links { display: none; } /* 簡化版 MVP 先隱藏 */
+    .hero-btns { flex-direction: column; } /*[cite: 3] */
+    .nav-links { display: none; } /*[cite: 3] */
 }
